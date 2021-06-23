@@ -1,0 +1,20 @@
+.advantage {
+  padding-top: 25px;
+  padding-bottom: 24px;
+
+  text-align: center;
+}
+
+.advantage__img {
+  width: 100%;
+  height: unset;
+}
+
+.advantage--accent-bg {
+  color: $light-color;
+  background-color: $main-color;
+}
+
+.advantage--grey-bg {
+  background-color: $bg-grey;
+}

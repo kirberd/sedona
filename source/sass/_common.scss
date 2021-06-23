@@ -1,3 +1,9 @@
+body,
+button,
+input {
+  font-family: 'PT Sans', sans-serif;
+}
+
 .visuallyhidden {
   position: absolute;
   width: 1px;
@@ -10,4 +16,3 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-

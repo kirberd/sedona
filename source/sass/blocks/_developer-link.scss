@@ -1,0 +1,16 @@
+.developer-link {
+  color: $black-color;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// ? Стоит ли так оставить?
+.developer-link:hover path {
+  fill: $main-color;
+}
+
+.developer-link:active path {
+  fill: $disabled-color;
+}

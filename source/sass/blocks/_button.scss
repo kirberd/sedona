@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  padding: 14px 32px 17px;
+
+  color: $light-color;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $main-color;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $main-color-hover;
+}
+
+.button:active {
+  background-color: $main-color-down;
+  color: opacify($color: $light-color, $amount: 0.3);
+}
+
+.button:disabled {
+  background-color: $disabled-color;
+}
