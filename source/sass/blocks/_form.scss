@@ -1,0 +1,96 @@
+.form__fieldset {
+  padding-top: 20px;
+
+  border: none;
+  border-top: 2px solid $disabled-color;
+}
+
+.form__legend {
+  float: left;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black-color;
+}
+
+.form__list {
+  padding: 0;
+  list-style: none;
+}
+
+.form__item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form__input,
+.form__label--bold,
+.form__textarea {
+  font-size: 18px;
+  line-height: 26px;
+  color: $black-color;
+  font-weight: bold;
+}
+
+.form__input-wrapper {
+  display: flex;
+}
+
+.form__input {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  background-color: $input-bg;
+  border: none;
+}
+
+// .form__input--no-outline {
+//   outline: none;
+//   flex-grow: 1;
+// }
+
+.form__input-wrapper::after {
+  content: '';
+  display: block;
+  width: 58px;
+
+  background-color: $input-img-bg;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// .form__input-wrapper {
+//   outline: auto;
+// }
+
+.form__input-wrapper--phone::after {
+  background-image: url(../img/icon-phone.svg);
+}
+
+.form__input-wrapper--mail::after {
+  background-image: url(../img/icon-mail.svg);
+}
+
+.form__label {
+  margin-right: 12px;
+}
+
+.form__label--top {
+  display: block;
+}
+
+.form__label--bold {
+  text-transform: none;
+}
+
+.form__required-field {
+  top: -0.3em;
+}
+
+.form__textarea {
+  width: 100%;
+  margin-top: 15px;
+}
