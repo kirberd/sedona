@@ -4,6 +4,27 @@
 }
 
 .features__item {
+  position: relative;
+
   padding-top: 25px;
   padding-bottom: 24px;
+}
+
+.features__item::before {
+  content: '';
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+.features__item--house::before {
+  background: url(../img/icon-house.svg) no-repeat center;
+}
+
+.features__item--gift::before {
+  background: url(../img/icon-gift.svg) no-repeat center;
+}
+
+.features__item--burger::before {
+  background: url(../img/icon-burger.svg) no-repeat center;
 }

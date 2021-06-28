@@ -1,4 +1,4 @@
-@import "normalize";
+@import "normalize.min.scss";
 @import "variables";
 @import "font-face";
 @import "common";
@@ -14,3 +14,6 @@
 @import "blocks/page-footer";
 @import "blocks/social-list";
 @import "blocks/developer-link";
+@import "blocks/photo";
+@import "blocks/video";
+@import "blocks/form";
