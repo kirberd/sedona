@@ -5,11 +5,10 @@
   height: 157px;
   width: 100%;
 
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: center;
-  // background-size: cover;
 
   &::before {
     position: absolute;

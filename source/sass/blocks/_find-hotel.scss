@@ -1,4 +1,6 @@
 .find-hotel {
+  margin-right: 12px;
+  margin-left: 12px;
   padding-top: 33px;
   padding-bottom: 49px;
 
@@ -20,4 +22,14 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.find-hotel__wrapper {
+  margin: 0 auto;
+  max-width: 458px;
+}
+
+.find-hotel__button {
+  display: block;
+  max-width: 458px;
 }
