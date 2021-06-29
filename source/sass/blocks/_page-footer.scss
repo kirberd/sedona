@@ -1,6 +1,19 @@
 .page-footer {
+  margin: 0 auto;
+
   padding-top: 28px;
   padding-bottom: 22px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-screen) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px;
+
+    text-align: left;
+  }
 }
 
 .page-footer__hash-tag {

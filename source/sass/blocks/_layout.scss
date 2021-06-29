@@ -1,0 +1,27 @@
+.layout-center {
+    margin: 0 auto;
+}
+
+.layout-flex {
+  @media (min-width: $tablet-screen) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.layout-flex__col-3 {
+  flex-grow: 1;
+  flex-basis: 33%;
+}
+
+.layout-flex__advantage-text {
+  flex-basis: 33%;
+}
+
+.layout-flex__advantage-img {
+  flex-grow: 1;
+}
+
+.layout-flex--revers {
+  flex-direction: row-reverse;
+}
