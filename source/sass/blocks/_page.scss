@@ -1,0 +1,14 @@
+.page {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $regular-text-color;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows:
+    min-content
+    1fr
+    min-content;
+}
