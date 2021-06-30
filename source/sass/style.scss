@@ -4,10 +4,13 @@
 @import "common";
 
 @import "blocks/page";
+@import "blocks/page-header";
+@import "blocks/page-main";
 @import "blocks/page-footer";
 
-@import "blocks/layout";
 @import "blocks/typography";
+@import "blocks/layout";
+@import "blocks/nav";
 @import "blocks/button";
 @import "blocks/menu-list";
 @import "blocks/banner";
@@ -19,6 +22,7 @@
 @import "blocks/map";
 @import "blocks/social-list";
 @import "blocks/developer-link";
+@import "blocks/photo-album";
 @import "blocks/photo";
 @import "blocks/video";
 @import "blocks/form";

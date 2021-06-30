@@ -1,16 +1,29 @@
 .photo {
   padding-top: 20px;
   padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   border-top: solid $disabled-color 2px;
+
+  @media (min-width: $tablet-screen) {
+    padding: 0;
+
+    border-top: none;
+    background-color: $disabled-color;
+  }
 }
 
 .photo:last-child {
   border-bottom: solid $disabled-color 1px;
+
+  @media (min-width: $tablet-screen) {
+    border-bottom: none;
+  }
 }
 
 .photo__img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   // padding: 20px;
 }

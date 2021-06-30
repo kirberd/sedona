@@ -12,31 +12,36 @@
 </head>
 
 <body class="page__body">
+<div class="container">
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип">
-    </a>
-
     <nav class="nav">
-      <button class="nav__toggle" type="button" aria-label="Открыть мобильное меню"></button>
-
       <ul class="nav__list  menu-list">
         <li class="menu-list__item">
           <a class="menu-list__link  menu-list__link--current">
             Главная
           </a>
         </li>
+
         <li class="menu-list__item">
           <a class="menu-list__link" href="photo.html">
             Фото и видео
           </a>
         </li>
+
+        <!-- Logo -->
+        <li class="menu-list__item  menu-list__logo  page-header__logo--widescreen">
+          <a class="page-header__logo  page-header__logo--center">
+            <img src="img/logo-sedona-tablet.svg" width="102" height="84" alt="Логотип">
+          </a>
+        </li>
+
         <li class="menu-list__item">
           <a class="menu-list__link" href="form.html">
             Форма отзыва
           </a>
         </li>
+
         <li class="menu-list__item">
           <a class="menu-list__link" href="htmlacademy.ru">
             HTML ACADEMY
@@ -44,6 +49,12 @@
         </li>
       </ul>
     </nav>
+
+    <a class="page-header__logo  page-header__logo--mobile">
+      <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип">
+    </a>
+
+    <button class="button--toggle-menu  page-header__button" type="button" aria-label="Открыть мобильное меню"></button>
   </header>
 
 
@@ -57,16 +68,16 @@
       </div> -->
     </div>
 
-    <section class="advantages">
-      <div class="intro  layout-center">
-        <h1 class="universal-title">
-          СЕДОНА — небольшой городок в аризоне, заслуживающий большего!
-        </h1>
-        <p class="universal-text">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        </p>
-      </div>
+    <div class="intro  page-main__intro">
+      <h1 class="universal-title">
+        СЕДОНА — небольшой городок в аризоне, заслуживающий большего!
+      </h1>
+      <p class="universal-text">
+        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+      </p>
+    </div>
 
+    <section class="advantages">
       <div class="advantage  layout-flex">
         <div class="advantage__wrapper  advantage--accent-bg  layout-flex__advantage-text">
           <h2 class="universal-title">
@@ -83,44 +94,44 @@
         <div class="advantage__img-wrapper  layout-flex__advantage-img">
           <img class="advantage__img" src="img/main-city-tablet@2x.jpg" width="150" height="150" alt="Городок">
         </div>
+      </div>
 
 
-        <div class="advantage__features  features  layout-flex">
-          <div class="features__item  layout-flex__col-3">
-            <div class="features__wrapper  features__icon  features__icon--house">
-              <h3 class="universal-title">
-                Жильё
-              </h3>
-              <p class="universal-text">
-                Рекомендуем пожить в настоящем мотеле, все как в кино!
-              </p>
-            </div>
-          </div>
-
-          <div class="features__item  layout-flex__col-3">
-            <div class="features__wrapper  features__icon  features__icon--gift">
-              <h3 class="universal-title">
-                Сувениры
-              </h3>
-              <p class="universal-text">
-                Не только китайского, но и местного производства!
-              </p>
-            </div>
-          </div>
-
-          <div class="features__item  layout-flex__col-3">
-            <div class="features__wrapper  features__icon  features__icon--burger">
-              <h3 class="universal-title">
-                Еда
-              </h3>
-              <p class="universal-text">
-                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-              </p>
-            </div>
+      <div class="advantage__features  features  layout-flex">
+        <div class="features__item  layout-flex__col-3">
+          <div class="features__wrapper  features__icon  features__icon--house">
+            <h3 class="universal-title">
+              Жильё
+            </h3>
+            <p class="universal-text">
+              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
           </div>
         </div>
-        <!-- /.features -->
+
+        <div class="features__item  layout-flex__col-3">
+          <div class="features__wrapper  features__icon  features__icon--gift">
+            <h3 class="universal-title">
+              Сувениры
+            </h3>
+            <p class="universal-text">
+              Не только китайского, но и местного производства!
+            </p>
+          </div>
+        </div>
+
+        <div class="features__item  layout-flex__col-3">
+          <div class="features__wrapper  features__icon  features__icon--burger">
+            <h3 class="universal-title">
+              Еда
+            </h3>
+            <p class="universal-text">
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </p>
+          </div>
+        </div>
       </div>
+      <!-- /.features -->
 
 
       <div class="advantage  layout-flex  layout-flex--revers">
@@ -139,8 +150,8 @@
         <div class="advantage__img-wrapper  layout-flex__advantage-img">
           <img class="advantage__img" src="img/main-bridge-desktop@2x.jpg" width="150" height="150" alt="Городок">
         </div>
-
       </div>
+
 
       <div class="advantages-group  layout-flex">
         <div class="advantage  advantage--grey-bg  layout-flex__col-3">
@@ -212,6 +223,7 @@
     </section>
   </main>
 
+
   <footer class="page-footer">
     <p class="page-footer__hash-tag">
       #VISITSEDONA
@@ -242,6 +254,9 @@
       </svg>
     </a>
   </footer>
+
+</div>
+<!-- /.container -->
 </body>
 
 </html>

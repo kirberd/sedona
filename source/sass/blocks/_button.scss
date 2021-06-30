@@ -26,3 +26,41 @@
 .button:disabled {
   background-color: $disabled-color;
 }
+
+
+.button--toggle-menu {
+  position: relative;
+
+  display: block;
+  width: 23px;
+  height: 4px;
+  margin: 12px 4px;
+
+  border: none;
+  background-color: $main-color;
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 0;
+
+    content: '';
+    display: block;
+    width: 23px;
+    height: 4px;
+
+    background-color: $main-color;
+  }
+
+  &::before {
+    top: 8px;
+  }
+
+  &::after {
+    bottom: 8px;
+  }
+
+  @media (min-width: $tablet-screen) {
+    display: none;
+  }
+}

@@ -1,6 +1,8 @@
 .menu-list {
   padding: 0;
   margin: 0;
+  height: 56px;
+
   list-style: none;
 }
 
@@ -33,4 +35,29 @@
 
 .menu-list__link--current {
   cursor: default;
+}
+
+@media (min-width: $tablet-screen) {
+  .menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-content: start;
+    align-items: center;
+  }
+
+  .menu-list__item {
+    flex-basis: 20%;
+  }
+
+  .menu-list__logo {
+    align-self: start;
+  }
+
+  .menu-list__link {
+    font-size: 14px;
+    line-height: 18px;
+    color: $black-color;
+
+    background-color: transparent;
+  }
 }

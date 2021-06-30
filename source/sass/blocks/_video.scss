@@ -4,5 +4,28 @@
 }
 
 .video__text {
+  max-width: 445px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+
   text-align: center;
+}
+
+.video__player {
+  margin: 0 auto;
+  max-width: 648px;
+  max-height: 500px;
+}
+
+// ! Ахтунг !
+.video img {
+  width: 100%;
+}
+
+@media (min-width: $desktop-screen) {
+  .video__player {
+    max-width: 800px;
+    max-height: 500px;
+  }
 }

@@ -5,7 +5,7 @@
   height: 157px;
   width: 100%;
 
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(../../img/bg-back-desktop@2x.jpg);
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: center;
@@ -24,12 +24,20 @@
     background-image: url(../../img/text-sedona.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 282px;
+
+    @media (min-width: $tablet-screen) {
+      background-size: 460px;
+    }
+
+    @media (max-width: 300px) {
+      background-size: 80%;
+    }
   }
 
   &::after {
     position: absolute;
-    bottom: -1px;
+    bottom: 0px;
     left: 0;
     z-index: 2;
 
@@ -43,13 +51,22 @@
     background-position-y: bottom;
     background-position-x: center;
   }
+
+  @media (min-width: $tablet-screen) {
+    height: 296px;
+  }
 }
 
 .banner--index {
   height: 389px;
   background-position: center;
+  background-size: cover;
 
   &::before {
     background-image: url(../img/text-sedona-index.svg);
+  }
+
+  @media (min-width: $tablet-screen) {
+    height: 518px;
   }
 }

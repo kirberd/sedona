@@ -9,34 +9,38 @@
 
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body class="page__body">
+  <div class="container">
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип">
-      </a>
-
       <nav class="nav">
-        <button class="nav__toggle" type="button">
-          <span class="visuallyhidden">Открыть меню</span>
-        </button>
-
         <ul class="nav__list  menu-list">
           <li class="menu-list__item">
             <a class="menu-list__link" href="index.html">
               Главная
             </a>
           </li>
+          
           <li class="menu-list__item">
             <a class="menu-list__link" href="photo.html">
               Фото и видео
             </a>
           </li>
-          <li class="menu-list__item  menu-list__item">
+
+          <!-- Logo -->
+          <li class="menu-list__item  menu-list__logo  page-header__logo--widescreen">
+            <a class="page-header__logo  page-header__logo--center">
+              <img src="img/logo-sedona-tablet.svg" width="102" height="84" alt="Логотип">
+            </a>
+          </li>
+
+          <li class="menu-list__item">
             <a class="menu-list__link  menu-list__link--current">
               Форма отзыва
             </a>
           </li>
+
           <li class="menu-list__item">
             <a class="menu-list__link" href="htmlacademy.ru">
               HTML ACADEMY
@@ -44,6 +48,12 @@
           </li>
         </ul>
       </nav>
+
+      <a class="page-header__logo  page-header__logo--mobile">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип">
+      </a>
+
+      <button class="button--toggle-menu  page-header__button" type="button" aria-label="Открыть мобильное меню"></button>
     </header>
 
 
@@ -53,7 +63,7 @@
         <img class="banner__text" src="img/text-sedona.svg" alt=""> -->
       </div>
 
-      <section class="intro">
+      <section class="intro  page-main__intro">
         <h1 class="universal-title">
               Оставьте свой отзыв
         </h1>
@@ -191,6 +201,7 @@
       </form>
     </main>
 
+
     <footer class="page-footer">
       <p class="page-footer__hash-tag">
         #VISITSEDONA
@@ -215,11 +226,14 @@
       </ul>
 
       <a class="page-footer__developer  developer-link" href="https://htmlacademy.ru">
-        Разработано
+        <span>Разработано</span>
         <svg class="developer-link__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
         </svg>
       </a>
     </footer>
+
+  </div>
+  <!-- /.container -->
   </body>
 </html>
