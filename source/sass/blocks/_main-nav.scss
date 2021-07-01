@@ -1,7 +1,5 @@
 .main-nav {
   position: relative;
-  width: auto;
-  min-height: 56px;
 }
 
 // Общие стили кнопки .main-nav__toggle
@@ -9,10 +7,11 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 4;
 
-  width: 32px;
-  height: 32px;
+  display: block;
+  width: 56px;
+  height: 56px;
   padding: 0;
 
   background-color: transparent;
@@ -43,7 +42,6 @@
   position: relative;
 
   content: '';
-  display: block;
   width: 22px;
   height: 4px;
 
@@ -70,7 +68,6 @@
   }
 }
 
-// TODO: Поменять цвет крестика
 // Крестик - когда у блока .main-nav модификатор --opened
 .main-nav--opened .main-nav__toggle-icon {
   position: relative;
@@ -88,7 +85,7 @@
 
     content: '';
     display: block;
-    width: 22px;
+    width: 25px;
     height: 4px;
 
     // background-color: $main-color;
@@ -105,3 +102,47 @@
   }
 }
 
+// Скрытие кнопок при выключеном JS
+.main-nav-nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+// Этот селектор обязательно должен идти после
+// .main-nav--closed .main-nav__wrapper
+// чтобы при выключенном JS меню отображалось
+.main-nav-nojs .main-nav__wrapper {
+  display: block;
+}
+
+// Анимация для мобильного меню
+@keyframes downMenu {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+// ! Селектор, из-за которого, только мобильное меню наезжает на баннер.
+// ! Он специально так сгруппирован, если удалить все в нижестоящем
+// ! медиазапросе то, он так делать не будет.
+@media (max-width: $mobile-width-only) {
+  .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    width: 100%;
+  }
+
+  .main-nav--opened .main-nav__list {
+    animation-name: downMenu;
+    animation-duration: 1s;
+  }
+}

@@ -2,26 +2,15 @@
   min-height: 56px;
 }
 
-/*
-.page-header {
-  @media (min-width: $tablet-width) {
-    height: 56px;
-  }
-
+.page-header__logo-wrapper {
+  position: relative;
+  width: auto;
+  height: 56px;
 }
 
-.page-header__logo--mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+.page-header__logo {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-.page-header__logo--widescreen {
-  display: none;
-  z-index: 10;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-*/
