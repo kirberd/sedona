@@ -1,4 +1,9 @@
 .page-header {
+  min-height: 56px;
+}
+
+/*
+.page-header {
   @media (min-width: $tablet-width) {
     height: 56px;
   }
@@ -19,3 +24,4 @@
     display: block;
   }
 }
+*/
