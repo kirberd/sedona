@@ -60,7 +60,7 @@
     bottom: 8px;
   }
 
-  @media (min-width: $tablet-screen) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

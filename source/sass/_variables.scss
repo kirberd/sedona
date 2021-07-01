@@ -1,3 +1,4 @@
+// Цвета
 $main-color: #81B3D2;
 $main-color-hover: #669EC0;
 $main-color-down: #5496BD;
@@ -9,5 +10,7 @@ $regular-text-color: #333333;
 $input-bg: #f2f2f2;
 $input-img-bg: #e6e6e6;
 
-$tablet-screen: 768px;
-$desktop-screen: 1200px;
+// Размеры устройств
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;

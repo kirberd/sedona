@@ -1,4 +1,4 @@
-@media (min-width: $tablet-screen) {
+@media (min-width: $tablet-width) {
   .photo-album {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: $desktop-screen) {
+@media (min-width: $desktop-width) {
   .photo-album {
     margin: 0;
   }

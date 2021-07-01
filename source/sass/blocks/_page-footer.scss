@@ -9,7 +9,7 @@
 
   text-align: center;
 
-  @media (min-width: $tablet-screen) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
     text-align: left;
   }
 
-  @media (min-width: $desktop-screen) {
+  @media (min-width: $desktop-width) {
     margin: 0 120px;
   }
 }

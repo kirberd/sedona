@@ -6,7 +6,7 @@
 
   border-top: solid $disabled-color 2px;
 
-  @media (min-width: $tablet-screen) {
+  @media (min-width: $tablet-width) {
     padding: 0;
 
     border-top: none;
@@ -17,7 +17,7 @@
 .photo:last-child {
   border-bottom: solid $disabled-color 1px;
 
-  @media (min-width: $tablet-screen) {
+  @media (min-width: $tablet-width) {
     border-bottom: none;
   }
 }
