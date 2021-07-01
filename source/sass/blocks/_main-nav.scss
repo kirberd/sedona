@@ -1,0 +1,107 @@
+.main-nav {
+  position: relative;
+  width: auto;
+  min-height: 56px;
+}
+
+// Общие стили кнопки .main-nav__toggle
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  // Смена цвета для иконки
+  &:hover .main-nav__toggle-icon {
+    opacity: .6;
+  }
+
+  &:active .main-nav__toggle-icon {
+    opacity: .3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+// Центрирование иконки
+.main-nav__toggle-icon {
+  margin: auto;
+}
+
+// Бургер - когда у блока .main-nav модификатор --closed
+.main-nav--closed .main-nav__toggle-icon {
+  position: relative;
+
+  content: '';
+  display: block;
+  width: 22px;
+  height: 4px;
+
+  background-color: $main-color;
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    content: '';
+    display: block;
+    width: 22px;
+    height: 4px;
+
+    background-color: $main-color;
+  }
+
+  &::before {
+    top: 8px;
+  }
+
+  &::after {
+    bottom: 8px;
+  }
+}
+
+// TODO: Поменять цвет крестика
+// Крестик - когда у блока .main-nav модификатор --opened
+.main-nav--opened .main-nav__toggle-icon {
+  position: relative;
+
+  content: '';
+  display: block;
+  width: 22px;
+  height: 4px;
+
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    content: '';
+    display: block;
+    width: 22px;
+    height: 4px;
+
+    // background-color: $main-color;
+    background-color: $light-color;
+
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
