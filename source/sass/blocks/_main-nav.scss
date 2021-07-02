@@ -19,13 +19,13 @@
   cursor: pointer;
 
   // Смена цвета для иконки
-  &:hover .main-nav__toggle-icon {
-    opacity: .6;
-  }
+  // &:hover .main-nav__toggle-icon {
+  //   opacity: .6;
+  // }
 
-  &:active .main-nav__toggle-icon {
-    opacity: .3;
-  }
+    &:active .main-nav__toggle-icon {
+      opacity: .3;
+    }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -107,6 +107,19 @@
   display: none;
 }
 
+// Если мобильник то, прятать меню при модификаторе --closed
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+  .main-nav--opened .main-nav__list {
+    display: block;
+  }
+}
+
+/*
+// ! .main-nav__wrapper нужен только для того чтобы сделать блок
+// ! абсолютно спозиционированным и чтобы он в свою очередь выезжал сверху
 .main-nav--closed .main-nav__wrapper {
   display: none;
 }
@@ -146,3 +159,4 @@
     animation-duration: 1s;
   }
 }
+*/
